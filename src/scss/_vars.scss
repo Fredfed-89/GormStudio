@@ -1,0 +1,20 @@
+/* stylelint-disable color-function-notation */
+/* stylelint-disable alpha-value-notation */
+// если вы хотите использовать sass-переменные - удалите root
+// colors
+:root {
+  // base
+  --font-family: "Roboto", sans-serif;
+  --content-width: 1200px;
+  --container-offset: 120px;
+  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+
+  // colors
+  --color-white: #fff;
+  --color-black: #000;
+  --color-red: #c6100f;
+  --color-text: rgba(255, 255, 255, 0.8);
+  --color-border-line: rgba(255, 255, 255, 0.15);
+  --color-border-bottom: rgba(255, 255, 255, 0.3);
+  --color-experiences-cards-bg: #171924;
+}

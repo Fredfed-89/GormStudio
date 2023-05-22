@@ -1,0 +1,87 @@
+.skills {
+  padding-bottom: 150px;
+
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-bottom: 62px;
+  }
+
+  &__list {
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    display: block;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 495px;
+  }
+
+  &__progress-info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__name {
+    display: block;
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--color-text);
+  }
+
+  &__percent {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--color-text);
+  }
+
+  &__progress {
+    border-radius: 0;
+    width: 100%;
+    height: 2px;
+    max-width: 495px;
+
+    &::-webkit-progress-bar {
+      background-color: var(--color-black);
+    }
+
+    &::-webkit-progress-value {
+      border-radius: 0;
+      background: var(--color-red);
+    }
+
+    &::-moz-progress-bar {
+      /* style rules */
+    }
+  }
+
+  &__notes {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: var(--color-text);
+  }
+
+  &__right {
+    position: relative;
+  }
+
+  &__image {
+    position: relative;
+    right: -120px;
+    max-width: 800px;
+  }
+}

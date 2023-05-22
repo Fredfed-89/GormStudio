@@ -1,0 +1,56 @@
+.facts {
+  padding-bottom: 150px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 71px;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 110%;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__item {
+    padding-left: 85px;
+    background-position: left center;
+    background-size: 65px 65px;
+    background-repeat: no-repeat;
+
+    &--first {
+      background-image: url("../img/facts-icon-first.png");
+    }
+
+    &--second {
+      background-image: url("../img/facts-icon-second.png");
+    }
+
+    &--third {
+      background-image: url("../img/facts-icon-third.png");
+    }
+
+    &--fourth {
+      background-image: url("../img/facts-icon-fourth.png");
+    }
+  }
+
+  &__number {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 46px;
+    line-height: 109%;
+    text-transform: uppercase;
+  }
+
+  &__number-descr {
+    font-size: 20px;
+    line-height: 120%;
+    color: var(--color-text);
+  }
+}

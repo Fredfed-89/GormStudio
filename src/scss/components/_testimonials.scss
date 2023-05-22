@@ -1,0 +1,59 @@
+/* stylelint-disable order/order */
+.testimonials {
+  padding-bottom: 150px;
+
+  &__title {
+    margin-bottom: 82px;
+    text-align: center;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  &__author-image {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 100px;
+    max-height: 100px;
+  }
+
+  &__author-text {
+    margin: 0 auto;
+    margin-bottom: 21px;
+    max-width: 580px;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 110%;
+    text-transform: uppercase;
+  }
+
+  &__author-name,
+  &__author-position {
+    display: block;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 133%;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-text);
+  }
+
+  &__author-name {
+    margin-bottom: 5px;
+  }
+
+  &__author-position {
+    margin-bottom: 16px;
+  }
+}
