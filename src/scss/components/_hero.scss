@@ -26,44 +26,6 @@
     background-repeat: no-repeat;
   }
 
-  &__social-list {
-    position: absolute;
-    right: 45px;
-    top: 27%;
-    bottom: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &__social-item {
-    &:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
-
-  &__social-link {
-    padding-top: 23px;
-    font-weight: 400;
-    font-size: 11px;
-    line-height: 20px;
-    writing-mode: vertical-lr;
-    background-position: top;
-    background-size: 16px 16px;
-    background-repeat: no-repeat;
-    transform: rotate(0deg);
-
-    &--insta {
-      background-image: url("../img/hero-instagram-icon.svg");
-    }
-
-    &--twitter {
-      background-image: url("../img/hero-twitter-icon.svg");
-    }
-
-    &--dribble {
-      background-image: url("../img/hero-dribble-icon.svg");
-    }
-  }
-
   &__arrow-link {
     position: absolute;
     right: 0;
@@ -75,5 +37,43 @@
     background-position: right;
     background-size: 46px 46px;
     background-repeat: no-repeat;
+  }
+
+  .social {
+    position: absolute;
+    right: 45px;
+    top: 27%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+
+    &__social-item {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+
+    &__social-link {
+      padding-top: 23px;
+      font-weight: 400;
+      font-size: 11px;
+      line-height: 20px;
+      writing-mode: vertical-lr;
+      background-position: top;
+      background-size: 16px 16px;
+      background-repeat: no-repeat;
+      transform: rotate(0deg);
+
+      &--insta {
+        background-image: url("../img/hero-instagram-icon.svg");
+      }
+
+      &--twitter {
+        background-image: url("../img/hero-twitter-icon.svg");
+      }
+
+      &--dribble {
+        background-image: url("../img/hero-dribble-icon.svg");
+      }
+    }
   }
 }
