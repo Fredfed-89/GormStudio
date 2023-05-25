@@ -60,11 +60,12 @@
 
     &::-webkit-progress-value {
       border-radius: 0;
-      background: var(--color-red);
+      background-color: var(--color-red);
     }
 
     &::-moz-progress-bar {
-      /* style rules */
+      border-radius: 0;
+      background-color: var(--color-red);
     }
   }
 
