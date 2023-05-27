@@ -5,7 +5,7 @@
   border-bottom: 1px solid var(--color-border-line);
 
   &__container {
-    position: relative;
+    // position: relative;
     align-items: center;
     justify-content: space-between;
   }
@@ -20,7 +20,24 @@
 
   .logo {
     display: block;
+    width: 100%;
     max-width: 27px;
+  }
+
+  &__info-link-inner {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 284px;
+
+    &--nav {
+      display: none;
+
+      @include mobile-l {
+        display: flex;
+        padding: 10px 0;
+      }
+    }
   }
 
   &__info-link {
@@ -36,39 +53,34 @@
     &--newyork {
       max-width: 134px;
     }
-  }
 
-  &__nav {
-    position: relative;
-    z-index: 100;
-    // transition: 1s;
+    @include mobile-l {
+      display: none;
+    }
 
-    @include mobile-m {
-      // position: absolute;
-      // flex-direction: column;
-      // justify-content: flex-start;
-      // padding-top: 50px;
-      // height: 100vh;
-      // text-align: center;
-      // background-color: var(--color-black);
-      // transform: translateX(-100%);
-      // // transition: 1s;
-      // inset: 0;
+    &--innav {
+      @include mobile-l {
+        display: block;
+        font-size: 12px;
+      }
     }
   }
 
-  &__nav-item {
-    // position: relative;
+  &__nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: 0.3s;
   }
 
-  &__nav-list {
-    position: absolute;
-    left: -110px;
-    top: 0;
-    z-index: 101;
-    display: block;
-    transform: translateY(-200%);
-    transition: 0.3s;
+  &__nav-item {
+    padding: 15px 0;
   }
 
   &__nav-link {
@@ -131,10 +143,19 @@
   }
 }
 
-.header__nav-list.is-active {
-  border-radius: 4px;
-  background-color: var(--color-experiences-cards-bg);
-  transform: translateY(100%);
+.header__nav.active {
+  left: 50.7%;
+  top: 300%;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  background-color: var(--color-red);
+  opacity: 0.9;
+  transform: translate(-50%, -50%);
+
+  @include mobile-l {
+    left: 51.7%;
+  }
 }
 
 .hamburger {
