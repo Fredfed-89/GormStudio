@@ -164,17 +164,34 @@ a {
     background-size: 16px 16px;
     background-repeat: no-repeat;
     transform: rotate(0deg);
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 
     &--insta {
-      background-image: url("../img/hero-instagram-icon.svg");
+      &:hover svg {
+        fill: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      }
     }
 
+    // &--insta svg {
+    //   &:hover {
+    //     color: var(--color-red);
+    //   }
+    // }
+
     &--twitter {
-      background-image: url("../img/hero-twitter-icon.svg");
+      &:hover {
+        color: #00acee;
+      }
+
+      // background-image: url("../img/hero-twitter-icon.svg");
     }
 
     &--dribble {
-      background-image: url("../img/hero-dribble-icon.svg");
+      &:hover {
+        color: #ea4c89;
+      }
+
+      // background-image: url("../img/hero-dribble-icon.svg");
     }
   }
 }
