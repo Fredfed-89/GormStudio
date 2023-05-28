@@ -155,7 +155,6 @@ a {
   }
 
   &__social-link {
-    padding-top: 23px;
     font-weight: 400;
     font-size: 11px;
     line-height: 20px;
@@ -164,34 +163,39 @@ a {
     background-size: 16px 16px;
     background-repeat: no-repeat;
     transform: rotate(0deg);
-    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out;
 
     &--insta {
-      &:hover svg {
-        fill: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      svg {
+        margin-bottom: 7px;
+        fill: #d6249f;
+      }
+
+      &:hover {
+        color: #d6249f;
       }
     }
 
-    // &--insta svg {
-    //   &:hover {
-    //     color: var(--color-red);
-    //   }
-    // }
-
     &--twitter {
+      svg {
+        margin-bottom: 7px;
+        fill: #00acee;
+      }
+
       &:hover {
         color: #00acee;
       }
-
-      // background-image: url("../img/hero-twitter-icon.svg");
     }
 
     &--dribble {
+      svg {
+        margin-bottom: 7px;
+        fill: #ea4c89;
+      }
+
       &:hover {
         color: #ea4c89;
       }
-
-      // background-image: url("../img/hero-dribble-icon.svg");
     }
   }
 }

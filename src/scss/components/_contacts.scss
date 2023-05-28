@@ -69,5 +69,11 @@
     line-height: 133%;
     color: var(--color-text);
     background: var(--color-red);
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--color-black);
+      background-color: var(--color-white);
+    }
   }
 }

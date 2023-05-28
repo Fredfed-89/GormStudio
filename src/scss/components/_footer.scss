@@ -58,7 +58,6 @@
   &__descr {
     margin: 0;
     margin-bottom: 30px;
-    // max-width: 488px;
     font-weight: 400;
     font-size: 20px;
     line-height: 120%;
@@ -81,6 +80,11 @@
     line-height: 133%;
     letter-spacing: 1px;
     text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--color-red);
+    }
   }
 
   &__right {
@@ -103,36 +107,71 @@
   }
 
   &__social-link {
-    padding-left: 23px;
+    display: flex;
+    align-items: center;
     font-weight: 400;
     font-size: 15px;
     line-height: 133%;
     background-position: left;
     background-size: 16px 16px;
     background-repeat: no-repeat;
+    transition: color 0.3s ease-in-out;
 
     &--insta {
-      background-image: url("../img/footer-instagram-icon.svg");
+      svg {
+        margin-right: 7px;
+        fill: #d6249f;
+      }
+
+      &:hover {
+        color: #d6249f;
+      }
     }
 
     &--twitter {
-      background-image: url("../img/footer-twitter-icon.svg");
+      svg {
+        margin-right: 7px;
+        fill: #00acee;
+      }
+
+      &:hover {
+        color: #00acee;
+      }
     }
 
     &--dribble {
-      background-image: url("../img/footer-dribble-icon.svg");
+      svg {
+        margin-right: 7px;
+        fill: #ea4c89;
+      }
+
+      &:hover {
+        color: #ea4c89;
+      }
     }
+  }
+
+  &__contacts-inner {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
   }
 
   &__mail,
   &__phone {
-    display: block;
+    display: flex;
+    justify-content: end;
     font-weight: 400;
     font-size: 17px;
     line-height: 120%;
     letter-spacing: 1px;
-    text-align: right;
+    text-align: end;
     text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--color-red);
+    }
   }
 
   &__mail {

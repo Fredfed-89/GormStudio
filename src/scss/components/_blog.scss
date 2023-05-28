@@ -16,7 +16,6 @@
   .content {
     display: block;
     border-radius: 0;
-    padding-bottom: 5px;
     width: 100%;
     max-width: 393px;
     background-color: var(--color-dark-bg);
@@ -25,6 +24,10 @@
       display: block;
       margin-bottom: 30px;
       max-width: 393px;
+    }
+
+    &__inner {
+      padding: 0 15px 15px;
     }
 
     &__label {
@@ -55,13 +58,18 @@
       text-transform: uppercase;
     }
 
-    &__link-more {
+    &__more-link {
       display: inline-block;
       font-weight: 400;
       font-size: 13px;
       line-height: 169%;
       letter-spacing: 1px;
       text-transform: uppercase;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: var(--color-red);
+      }
     }
   }
 }

@@ -71,6 +71,12 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     background-color: var(--color-red);
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+
+    &:hover {
+      color: var(--color-black);
+      background-color: var(--color-white);
+    }
   }
 
   &__partners {
@@ -201,14 +207,23 @@
   }
 
   &__btn-inner {
-    padding: 30px 669px;
+    position: relative;
+    padding: 15px 669px;
     background-color: var(--color-red);
+    // transition: border 0.3s ease-in-out, color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: #000;
+      background-color: #fff;
+    }
   }
 
   &__btn-link {
     display: inline-block;
     margin: 0 auto;
-    border-bottom: 1px solid var(--color-border-bottom);
+    // border-bottom: 1px solid var(--color-border-bottom);
+    padding: 15px 0;
     font-weight: 400;
     font-size: 13px;
     line-height: 169%;
@@ -216,6 +231,23 @@
     white-space: nowrap;
     text-align: center;
     text-transform: uppercase;
+    transition: border 0.3s ease-in-out;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 49.7%;
+      top: 62%;
+      display: block;
+      border-bottom: 1px solid var(--color-border-bottom);
+      height: 1px;
+      min-width: 102px;
+      transform: translate(-50%, -50%);
+
+      // &:hover::after {
+      //   border-bottom: 1px solid var(--color-black);
+      // }
+    }
   }
 
   .circle {
@@ -230,30 +262,39 @@
     height: 156px;
     background-color: var(--color-red);
     transform: translate(-50%, -50%);
-  }
+    transition: color 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95), background-color 0.3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
 
-  .text {
-    width: 100%;
-    height: 100%;
-    font-weight: 700;
-    letter-spacing: 0;
-    text-transform: uppercase;
-    animation: rotateText 10s linear infinite;
-  }
+    &__text-btn {
+      width: 100%;
+      height: 100%;
+      font-weight: 700;
+      letter-spacing: 0;
+      text-transform: uppercase;
+      animation: rotateText 10s linear infinite;
 
-  .text span {
-    position: absolute;
-    top: 5%;
-    color: var(--color-white);
-    transform-origin: 0 69px;
+      span {
+        position: absolute;
+        top: 5%;
+        color: var(--color-white);
+        transform-origin: 0 69px;
+      }
+    }
+
+    &:hover {
+      background-color: var(--color-text);
+    }
+
+    &:hover span {
+      color: #000;
+    }
   }
 
   @keyframes rotateText {
-    0% {
+    100% {
       transform: rotate(360deg);
     }
 
-    100% {
+    0% {
       transform: rotate(0deg);
     }
   }
