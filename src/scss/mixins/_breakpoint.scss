@@ -36,6 +36,12 @@
   }
 }
 
+@mixin mobile-m-hero {
+  @media (max-width: (465px)) {
+    @content;
+  }
+}
+
 @mixin mobile-s {
   @media (max-width: (375px)) {
     @content;

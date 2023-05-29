@@ -17,6 +17,10 @@
     width: 100%;
     max-width: 323px;
 
+    @include mobile-l {
+      padding: 15px 0;
+    }
+
     @include mobile-s {
       max-width: 150px;
     }

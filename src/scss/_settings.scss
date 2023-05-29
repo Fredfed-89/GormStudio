@@ -135,6 +135,18 @@ a {
   }
 
   @include mobile-m {
+    font-size: 52px;
+  }
+
+  @include mobile-m-hero {
+    // font-size: 42px;
+  }
+
+  @include mobile-m {
+    font-size: 42px;
+  }
+
+  @include mobile-s {
     font-size: 42px;
   }
 }
@@ -169,7 +181,19 @@ a {
   }
 
   @include mobile-l {
-    top: 15%;
+    top: 19%;
+  }
+
+  @include mobile-m {
+    right: 5px;
+  }
+
+  @include mobile-m {
+    top: 5%;
+  }
+
+  @include mobile-s {
+    top: 0;
   }
 
   &__social-item {

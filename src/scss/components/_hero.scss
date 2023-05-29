@@ -4,11 +4,11 @@
   padding-bottom: 54px;
 
   @include desktop {
-    padding-top: 70px;
+    padding-top: 100px;
   }
 
   @include mobile-l {
-    padding-top: 50px;
+    // padding-top: 60px;
   }
 
   &__container {
@@ -23,10 +23,17 @@
 
     @include macbook {
       margin-bottom: 70px;
+      max-width: 840px;
     }
 
     @include mobile-l {
+      margin-bottom: 30px;
       max-width: 520px;
+    }
+
+    @include mobile-m {
+      // margin-bottom: 30px;
+      max-width: 400px;
     }
   }
 
@@ -62,13 +69,30 @@
       background-color: var(--color-border-bottom);
     }
 
-    @include desktop {
+    @include big-desktop {
       right: 15px;
     }
 
+    @include macbook {
+      right: 55px;
+      top: 92%;
+    }
+
+    @include mobile-l {
+      right: 55px;
+      // top: 86%;
+    }
+
     @include mobile-m {
-      left: 15%;
-      top: 74%;
+      // left: 15%;
+      right: 65px;
+      // top: 100%;
+      top: 90%;
+    }
+
+    @include mobile-m-hero {
+      // top: 80%;
+      // top: 100%;
     }
   }
 }
