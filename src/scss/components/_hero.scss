@@ -3,6 +3,14 @@
   padding-top: 145px;
   padding-bottom: 54px;
 
+  @include desktop {
+    padding-top: 70px;
+  }
+
+  @include mobile-l {
+    padding-top: 50px;
+  }
+
   &__container {
     position: relative;
     display: flex;
@@ -10,7 +18,16 @@
 
   &__title {
     margin-bottom: 91px;
+    max-width: 960px;
     text-align: left;
+
+    @include macbook {
+      margin-bottom: 70px;
+    }
+
+    @include mobile-l {
+      max-width: 520px;
+    }
   }
 
   &__mouse-link {
@@ -43,6 +60,15 @@
 
     &:hover {
       background-color: var(--color-border-bottom);
+    }
+
+    @include desktop {
+      right: 15px;
+    }
+
+    @include mobile-m {
+      left: 15%;
+      top: 74%;
     }
   }
 }

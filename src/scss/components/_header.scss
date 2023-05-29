@@ -16,6 +16,10 @@
     padding: 24px 0;
     width: 100%;
     max-width: 323px;
+
+    @include mobile-s {
+      max-width: 150px;
+    }
   }
 
   .logo {
@@ -100,6 +104,10 @@
     justify-content: space-between;
     width: 100%;
     max-width: 204px;
+
+    @include mobile-m {
+      max-width: 175px;
+    }
   }
 
   &__user-cart {
@@ -149,6 +157,11 @@
       color: var(--color-black);
       background-color: var(--color-white);
     }
+
+    @include mobile-m {
+      margin-left: 0;
+      padding: 11px;
+    }
   }
 }
 
@@ -164,6 +177,11 @@
 
   @include mobile-l {
     left: 51.7%;
+    top: 330%;
+  }
+
+  @include mobile-m {
+    left: 50%;
   }
 }
 
@@ -171,6 +189,12 @@
   z-index: 100;
   margin-left: -97px;
   padding: 30px 25px;
+
+  @include mobile-m {
+    margin-right: 10px;
+    // margin-left: -125px;
+    padding: 15px 10px;
+  }
 }
 
 .hamburger--spring {
@@ -178,6 +202,10 @@
   top: 4px;
   border-right: 1px solid var(--color-border-line);
   border-left: 1px solid var(--color-border-line);
+
+  @include mobile-s {
+    border: none;
+  }
 }
 
 .hamburger--spring .hamburger-inner {
