@@ -112,6 +112,11 @@ a {
   line-height: 110%;
   letter-spacing: 1px;
   text-transform: uppercase;
+
+  @include mobile-l {
+    font-size: 62px;
+    text-align: center;
+  }
 }
 
 .big-title {
@@ -180,8 +185,12 @@ a {
     right: 10px;
   }
 
+  @include macbook {
+    top: 20%;
+  }
+
   @include mobile-l {
-    top: 19%;
+    top: 18%;
   }
 
   @include mobile-m {
