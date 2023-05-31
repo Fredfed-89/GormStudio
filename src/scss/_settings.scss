@@ -127,33 +127,33 @@ a {
   text-align: center;
   text-transform: uppercase;
 
-  @include desktop {
-    font-size: 120px;
-  }
+  // @include desktop {
+  //   font-size: 120px;
+  // }
 
-  @include macbook {
-    font-size: 92px;
-  }
+  // @include macbook {
+  //   font-size: 92px;
+  // }
 
-  @include mobile-l {
-    font-size: 68px;
-  }
+  // @include mobile-l {
+  //   font-size: 68px;
+  // }
 
-  @include mobile-m {
-    font-size: 52px;
-  }
+  // @include mobile-m {
+  //   font-size: 52px;
+  // }
 
-  @include mobile-m-hero {
-    // font-size: 42px;
-  }
+  // @include mobile-m-hero {
+  //   // font-size: 42px;
+  // }
 
-  @include mobile-m {
-    font-size: 42px;
-  }
+  // @include mobile-m {
+  //   font-size: 42px;
+  // }
 
-  @include mobile-s {
-    font-size: 42px;
-  }
+  // @include mobile-s {
+  //   font-size: 42px;
+  // }
 }
 
 .flex {

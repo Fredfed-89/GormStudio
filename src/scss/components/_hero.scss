@@ -21,19 +21,29 @@
     max-width: 960px;
     text-align: left;
 
+    @include desktop {
+      font-size: 120px;
+    }
+
     @include macbook {
       margin-bottom: 70px;
       max-width: 840px;
+      font-size: 92px;
     }
 
     @include mobile-l {
       margin-bottom: 30px;
       max-width: 520px;
+      font-size: 68px;
     }
 
     @include mobile-m {
-      // margin-bottom: 30px;
       max-width: 400px;
+      font-size: 42px;
+    }
+
+    @include mobile-s {
+      font-size: 36px;
     }
   }
 
