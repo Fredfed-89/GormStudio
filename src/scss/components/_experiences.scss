@@ -1,9 +1,17 @@
 .experiences {
   padding: 100px 150px;
 
+  @include desktop {
+    padding: 80px 0;
+  }
+
   &__content {
     display: block;
     padding: 0 115px;
+
+    @include big-desktop {
+      padding: 0;
+    }
   }
 
   &__title {
@@ -15,11 +23,34 @@
     line-height: 110%;
     letter-spacing: 1px;
     text-transform: uppercase;
+
+    @include mobile-l {
+      margin-bottom: 30px;
+      text-align: left;
+    }
+
+    @include mobile-l {
+      max-width: 400px;
+      font-size: 62px;
+    }
+
+    @include mobile-m {
+      font-size: 42px;
+    }
   }
 
   &__list {
     display: flex;
     margin: 0 auto;
+
+    @include big-desktop {
+      justify-content: center;
+    }
+
+    @include mobile-l {
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
   }
 
   &__item {
@@ -31,7 +62,33 @@
 
     &:not(:last-child) {
       margin-right: 30px;
+
+      @include mobile-l {
+        margin-right: 0;
+        margin-bottom: 35px;
+      }
+
+      @include mobile-m {
+        margin-right: 0;
+      }
     }
+
+    &:first-child {
+      @include mobile-l {
+        // margin-right: 15px;
+      }
+    }
+
+    &:nth-child(2) {
+      @include mobile-l {
+        // margin-right: 15px;
+      }
+    }
+
+    // @include mobile-l {
+    //   flex-wrap: wrap;
+    //   justify-content: center;
+    // }
   }
 
   &__image {
@@ -84,6 +141,10 @@
     letter-spacing: 1px;
     text-align: center;
     text-transform: uppercase;
+
+    @include mobile-l {
+      font-size: 17px;
+    }
   }
 
   &__descr {
@@ -104,6 +165,10 @@
 
     &--right {
       max-width: 190px;
+    }
+
+    @include mobile-l {
+      font-size: 18px;
     }
   }
 }
