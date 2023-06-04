@@ -1,8 +1,17 @@
 .blog {
   padding-bottom: 100px;
 
+  @include mobile-m {
+    padding-bottom: 50px;
+  }
+
   &__title {
     margin-bottom: 82px;
+
+    @include mobile-m {
+      margin-bottom: 30px;
+      font-size: 42px;
+    }
   }
 
   &__list {
@@ -11,6 +20,27 @@
     margin: 0 auto;
     width: 100%;
     max-width: 840px;
+
+    @include mobile-m {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    @include macbook {
+      &:not(:last-child) {
+        margin-right: 20px;
+
+        @include mobile-m {
+          margin-right: 0;
+        }
+      }
+    }
+
+    @include mobile-m {
+      margin-bottom: 20px;
+    }
   }
 
   .content {
@@ -24,6 +54,10 @@
       display: block;
       margin-bottom: 30px;
       max-width: 393px;
+
+      @include mobile-l {
+        max-height: 250px;
+      }
     }
 
     &__inner {
@@ -56,6 +90,10 @@
       line-height: 124%;
       letter-spacing: 1px;
       text-transform: uppercase;
+
+      @include mobile-l {
+        font-size: 23px;
+      }
     }
 
     &__more-link {

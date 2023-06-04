@@ -2,31 +2,65 @@
 .contacts {
   padding-bottom: 150px;
 
+  @include mobile-l {
+    padding-bottom: 70px;
+  }
+
+  &__container {
+    @include big-desktop {
+      padding: 0 15px;
+    }
+  }
+
   &__content {
     position: relative;
     display: flex;
     justify-content: space-between;
     min-height: 533px;
+
+    @include desktop {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
 
   &__image {
-    position: absolute;
-    right: 45%;
+    position: relative;
+    right: 15%;
     top: 0;
     margin-right: 20px;
     width: 100%;
     max-width: 800px;
+
+    @include big-desktop {
+      right: 0;
+    }
+
+    @include desktop {
+      right: 0;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+
+    @include mobile-m {
+      max-height: 350px;
+    }
   }
 
   &__form-inner {
     position: relative;
-    right: -60%;
+    // right: -60%;
     width: 100%;
     max-width: 550px;
   }
 
   &__title {
     margin-bottom: 60px;
+
+    @include mobile-m {
+      margin-bottom: 30px;
+      font-size: 42px;
+    }
   }
 
   &__label {
@@ -53,6 +87,14 @@
       font-size: 20px;
       line-height: 120%;
       color: var(--color-text);
+
+      @include mobile-m {
+        font-size: 18px;
+      }
+
+      @include mobile-s {
+        font-size: 16px;
+      }
     }
   }
 

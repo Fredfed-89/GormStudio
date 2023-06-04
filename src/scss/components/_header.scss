@@ -2,12 +2,28 @@
 /* stylelint-disable alpha-value-notation */
 /* stylelint-disable color-function-notation */
 .header {
-  position: relative;
+  position: fixed;
+  left: 50%;
+  top: 0;
+  bottom: 100%;
+  z-index: 120;
   border-bottom: 1px solid var(--color-border-line);
+  width: 100%;
+  max-width: 1440px;
+  transform: translate(-50%, -50%);
+
+  // @include mobile-m {
+  //   position: fixed;
+  //   z-index: 120;
+  //   width: 100%;
+  //   max-width: 1200px;
+  //   background-color: var(--color-black);
+  // }
 
   &__container {
     align-items: center;
     justify-content: space-between;
+    background-color: var(--color-black);
   }
 
   &__info-inner {
@@ -53,6 +69,7 @@
     line-height: 120%;
     text-transform: uppercase;
     color: var(--color-header-text);
+    transition: color 0.3s ease-in-out;
 
     &--studio {
       max-width: 110px;
@@ -60,6 +77,11 @@
 
     &--newyork {
       max-width: 134px;
+    }
+
+    &:hover {
+      color: var(--color-red);
+      // background-color: var(--color-white);
     }
 
     @include mobile-l {
@@ -76,7 +98,8 @@
 
   &__nav {
     position: absolute;
-    left: 0;
+    // left: 0;
+    left: -100%;
     top: 0;
     z-index: 100;
     width: 100%;

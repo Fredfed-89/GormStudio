@@ -1,15 +1,40 @@
 .skills {
   padding-bottom: 150px;
 
+  @include mobile-m {
+    padding-bottom: 80px;
+  }
+
   &__container {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include macbook {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+
+  &__left {
+    @include desktop {
+      margin-right: 30px;
+    }
+
+    @include macbook {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
   }
 
   &__title {
     margin-bottom: 62px;
+
+    @include mobile-m {
+      margin-bottom: 30px;
+      font-size: 42px;
+    }
   }
 
   &__list {
@@ -84,5 +109,17 @@
     position: relative;
     right: -120px;
     max-width: 800px;
+
+    @include desktop {
+      right: 0;
+    }
+
+    @include mobile-l {
+      max-height: 450px;
+    }
+
+    @include mobile-m {
+      max-height: 350px;
+    }
   }
 }

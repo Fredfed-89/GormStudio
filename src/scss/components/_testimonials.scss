@@ -2,9 +2,18 @@
 .testimonials {
   padding-bottom: 150px;
 
+  @include mobile-m {
+    padding-bottom: 50px;
+  }
+
   &__title {
     margin-bottom: 82px;
     text-align: center;
+
+    @include mobile-m {
+      margin-bottom: 30px;
+      font-size: 40px;
+    }
   }
 
   &__list {
