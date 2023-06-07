@@ -12,13 +12,13 @@
   max-width: 1440px;
   transform: translate(-50%, -50%);
 
-  // @include mobile-m {
-  //   position: fixed;
-  //   z-index: 120;
-  //   width: 100%;
-  //   max-width: 1200px;
-  //   background-color: var(--color-black);
-  // }
+  @include mobile-l {
+    // top: 5.3%;
+  }
+
+  @include mobile-m {
+    // top: 4.7%;
+  }
 
   &__container {
     align-items: center;
@@ -81,7 +81,6 @@
 
     &:hover {
       color: var(--color-red);
-      // background-color: var(--color-white);
     }
 
     @include mobile-l {
@@ -98,7 +97,6 @@
 
   &__nav {
     position: absolute;
-    // left: 0;
     left: -100%;
     top: 0;
     z-index: 100;
@@ -108,10 +106,6 @@
     opacity: 0;
     transform: translateY(100%);
     transition: 0.3s;
-  }
-
-  &__nav-item {
-    // padding: 15px 0;
   }
 
   &__nav-link {
@@ -194,7 +188,7 @@
 
 .header__nav.active {
   left: 50.7%;
-  top: 300%;
+  top: 260px;
   border-radius: 16px;
   padding: 20px;
   text-align: center;
@@ -204,12 +198,12 @@
 
   @include mobile-l {
     left: 51.7%;
-    top: 350%;
+    top: 275px;
   }
 
   @include mobile-m {
     left: 50%;
-    top: 385%;
+    top: 265px;
   }
 }
 
@@ -220,7 +214,6 @@
 
   @include mobile-m {
     margin-right: 10px;
-    // margin-left: -125px;
     padding: 15px 10px;
   }
 }
