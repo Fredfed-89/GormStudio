@@ -2,13 +2,24 @@
   <div class="container team__container">
     <div class="team__top">
       <div class="team__top-showreel flex">
-        <img class="team__img-left" src="img/team-img-left.jpg" width="580" height="447" loading="lazy"
-          alt="the guy in the office sits at the table and takes notes in a notebook">
+        <picture class="team__img-left-wrapper">
+          <source srcset="img/team-img-left.avif" type="image/avif">
+          <source srcset="img/team-img-left.webp" type="image/webp">
+          <img class="team__img-left" src="img/team-img-left.jpg" width="580" height="447" loading="lazy"
+            alt="the guy in the office sits at the table and takes notes in a notebook">
+        </picture>
+        <!-- <img class="team__img-left" src="img/team-img-left.jpg" width="580" height="447" loading="lazy"
+          alt="the guy in the office sits at the table and takes notes in a notebook"> -->
         <div class="team__btn circle">
           <button class="circle__text-btn btn-reset" type="button">Play Showreel</button>
         </div>
-        <img class="team__img-right" src="img/team-img-right.jpg" width="800" height="533" loading="lazy"
-          alt="two men are sitting at a table in the office discussing a project">
+        <picture class="team__img-right-wrapper">
+          <source srcset="img/team-img-right.avif" type="image/avif">
+          <source srcset="img/team-img-right.webp" type="image/webp">
+          <img class="team__img-right" src="img/team-img-right.jpg" width="800" height="533" loading="lazy"
+            alt="two men are sitting at a table in the office discussing a project">
+        </picture>
+
       </div>
       <div class="team__descr flex">
         <h2 class="team__title title">

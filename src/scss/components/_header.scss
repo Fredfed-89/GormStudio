@@ -7,9 +7,8 @@
   top: 0;
   bottom: 100%;
   z-index: 120;
-  border-bottom: 1px solid var(--color-border-line);
   width: 100%;
-  max-width: 1440px;
+  max-width: 1920px;
   transform: translate(-50%, -50%);
 
   @include mobile-l {
@@ -23,7 +22,13 @@
   &__container {
     align-items: center;
     justify-content: space-between;
+    border-bottom: 1px solid var(--color-border-line);
+    padding: 0 265px;
     background-color: var(--color-black);
+
+    @include big-desktop {
+      padding: 0 15px;
+    }
   }
 
   &__info-inner {
@@ -188,7 +193,7 @@
 
 .header__nav.active {
   left: 50.7%;
-  top: 260px;
+  top: 265px;
   border-radius: 16px;
   padding: 20px;
   text-align: center;
@@ -198,12 +203,12 @@
 
   @include mobile-l {
     left: 51.7%;
-    top: 275px;
+    top: 280px;
   }
 
   @include mobile-m {
     left: 50%;
-    top: 265px;
+    top: 270px;
   }
 }
 
