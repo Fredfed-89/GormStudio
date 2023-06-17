@@ -3,14 +3,6 @@
   padding-top: 145px;
   padding-bottom: 54px;
 
-  @include desktop {
-    // padding-top: 100px;
-  }
-
-  @include mobile-l {
-    // padding-top: 60px;
-  }
-
   &__container {
     position: relative;
     display: flex;
@@ -90,19 +82,11 @@
 
     @include mobile-l {
       right: 55px;
-      // top: 86%;
     }
 
     @include mobile-m {
-      // left: 15%;
       right: 65px;
-      // top: 100%;
       top: 90%;
-    }
-
-    @include mobile-m-hero {
-      // top: 80%;
-      // top: 100%;
     }
   }
 }

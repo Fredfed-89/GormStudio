@@ -317,39 +317,21 @@
     display: flex;
     justify-content: center;
 
-    @include desktop {
-      // justify-content: center;
-    }
-
     @include mobile-m {
       flex-wrap: wrap;
+      margin-bottom: 10px;
     }
   }
 
-  &__work-item {
-    @include desktop {
-      margin-bottom: 30px;
-    }
+  &__work-item {}
 
-    @include mobile-m {
-      // margin-bottom: 15px;
-      margin-bottom: 0;
-    }
-  }
-
-  &__item-link {
-    // display: block;
-  }
+  &__item-link {}
 
   &__item-image {
+    display: block;
     width: 100%;
     height: 100%;
     max-width: 480px;
-
-    @include mobile-m {
-      // height: 100%;
-      // max-height: 350px;
-    }
   }
 
   &__btn-inner {
